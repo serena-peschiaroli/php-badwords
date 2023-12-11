@@ -10,7 +10,9 @@
 
     //prendi i parametry query
     $paragraph = $_GET["paragraph"];
-    $wordToCensor = [ 'Lorem' , 'ipsum', 'sed', 'magna'];
+
+    //prendere parola da censurare da get
+    $wordToCensor = $_GET["wordToCensor"];
 
     //mostra il paragrafo originale e la sua lunghezza
     //quando il paragrafo è multilinea, si usa nl2br per preservare i line breaks
@@ -20,7 +22,7 @@
     string.";
 
     Applying nl2br
-    echo nl2br($string);*/  
+    echo nl2br($string); */  
 
     echo "<h2>Paragrafo originale:</h2>";
     echo "<p>" . nl2br($paragraph) . "</p>";
