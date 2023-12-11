@@ -12,8 +12,15 @@
     $paragraph = $_GET["paragraph"];
     $wordToCensor = [ 'Lorem' , 'ipsum', 'sed', 'magna'];
 
-    //mostra il paragrafo oroginale e la sua lunghezza
+    //mostra il paragrafo originale e la sua lunghezza
     //quando il paragrafo è multilinea, si usa nl2br per preservare i line breaks
+
+    /*$string = "This is a
+    multi-line
+    string.";
+
+    Applying nl2br
+    echo nl2br($string);*/  
 
     echo "<h2>Paragrafo originale:</h2>";
     echo "<p>" . nl2br($paragraph) . "</p>";
